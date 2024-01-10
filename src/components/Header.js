@@ -33,6 +33,30 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
+        <div className="totalMenuBtn"></div>
+        <ul className="totalMenuConts">
+          <li>
+            <NavLink activeStyle={clickStyle} to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeStyle={clickStyle} to="/about">
+              About
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink activeStyle={clickStyle} to="/projects">
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeStyle={clickStyle} to="/contact">
+              Contact
+            </NavLink>
+          </li>
+        </ul>
       </div>
     </header>
   );
