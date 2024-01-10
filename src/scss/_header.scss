@@ -1,0 +1,36 @@
+header {
+  width: 100%;
+  background: #f6f8f6;
+  .inner {
+    display: flex;
+    width: 1328px;
+    padding: 40px 0;
+    align-items: center;
+    border: 1px solid #000;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .gnb {
+    width: 38%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 70px;
+    li {
+      font-size: 19px;
+      color: #4a6869;
+      font-weight: 500;
+    }
+  }
+  .join {
+    display: flex;
+    width: 9%;
+    margin-left: 118px;
+    padding: 16px 42px;
+    font-size: 22px;
+    color: #4a6869;
+    font-weight: 500;
+    border: 1px solid #e0e7e1;
+    border-radius: 100px;
+    justify-content: center;
+  }
+}
