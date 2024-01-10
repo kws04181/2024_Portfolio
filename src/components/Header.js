@@ -1,60 +1,78 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-<link
-  href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet"
-></link>;
 
 const Header = () => {
-  const clickStyle = { color: "blue" };
+  const line = useRef(null);
+  const gnb = useRef(null);
+
+  useEffect(() => {
+    const firstItem = gnb.current.querySelector("li");
+    if (firstItem) {
+      const { right, width } = firstItem.getBoundingClientRect();
+      line.current.style.right = `${right}px`;
+      line.current.style.width = `${width}px`;
+    }
+  }, []);
+
+  const lineMove = (e) => {
+    line.current.classList.add("on");
+
+    const elRight = e.target.getBoundingClientRect().right;
+    const elBottom = e.target.getBoundingClientRect().bottom;
+    const parentLeft = e.target.closest(".gnb").getBoundingClientRect().right;
+    const parentBottom = e.target
+      .closest(".gnb")
+      .getBoundingClientRect().bottom;
+
+    const moveLeft = parentLeft - elRight;
+    const moveTop = parentBottom - elBottom;
+
+    line.current.style.right = `${moveLeft}px`;
+    line.current.style.bottom = `${moveTop}px`;
+
+    const elWidth = e.target.getBoundingClientRect().width;
+
+    line.current.style.width = `${elWidth}px`;
+  };
+
+  const handleMouseLeave = () => {
+    line.current.classList.remove("on");
+    line.current.style.width = "0";
+    line.current.style.right = "0";
+    line.current.style.bottom = "0";
+  };
+
   return (
     <header>
       <div className="inner">
-        <ul className="gnb">
-          <li>
-            <NavLink activeStyle={clickStyle} to="/">
-              Home
-            </NavLink>
+        <ul ref={gnb} className="gnb" onMouseLeave={handleMouseLeave}>
+          <li className="line" ref={line}></li>
+          <li onMouseEnter={lineMove}>
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li>
-            <NavLink activeStyle={clickStyle} to="/about">
-              About
-            </NavLink>
+          <li onMouseEnter={lineMove}>
+            <NavLink to="/about">About</NavLink>
           </li>
-
-          <li>
-            <NavLink activeStyle={clickStyle} to="/projects">
-              Projects
-            </NavLink>
+          <li onMouseEnter={lineMove}>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
-          <li>
-            <NavLink activeStyle={clickStyle} to="/contact">
-              Contact
-            </NavLink>
+          <li onMouseEnter={lineMove}>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <div className="totalMenuBtn"></div>
         <ul className="totalMenuConts">
           <li>
-            <NavLink activeStyle={clickStyle} to="/">
-              Home
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink activeStyle={clickStyle} to="/about">
-              About
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink activeStyle={clickStyle} to="/projects">
-              Projects
-            </NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink activeStyle={clickStyle} to="/contact">
-              Contact
-            </NavLink>
+            <NavLink to="/projects">Projects</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>

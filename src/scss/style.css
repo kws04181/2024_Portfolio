@@ -1,8 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ol,
@@ -28,6 +29,7 @@ header .inner {
   margin: 0 auto;
 }
 header .gnb {
+  position: relative;
   width: 38%;
   display: flex;
   justify-content: space-between;
@@ -51,12 +53,25 @@ header .gnb li::after {
   width: 100%;
   height: 3px;
   background: linear-gradient(270deg, #000, transparent);
-  transform-origin: left;
+  transform-origin: left center;
   transform: scaleX(0);
-  transition: transform 0.6s;
+  transition: transform 0.3s ease-in-out;
 }
 header .gnb li:hover::after {
   transform: scaleX(1);
+}
+header .gnb .line {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background: #000;
+  transform-origin: left center;
+  top: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleX(0); /* 초기 상태에서 라인을 숨김 */
+}
+header .gnb:hover .line {
+  transform: scaleX(1); /* 마우스가 올라갔을 때 라인을 표시 */
 }
 header .totalMenuBtn {
   display: none;
