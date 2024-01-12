@@ -1,50 +1,75 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const line = useRef(null);
-  const gnb = useRef(null);
+  // const line = useRef(null);
+  // const gnb = useRef(null);
 
-  useEffect(() => {
-    const firstItem = gnb.current.querySelector("li");
-    if (firstItem) {
-      const { right, width } = firstItem.getBoundingClientRect();
-      line.current.style.right = `${right}px`;
-      line.current.style.width = `${width}px`;
-    }
-  }, []);
+  // useEffect(() => {
+  //   const firstItem = gnb.current.querySelector("li");
+  //   if (firstItem) {
+  //     const { right, width } = firstItem.getBoundingClientRect();
+  //     line.current.style.right = `${right}px`;
+  //     line.current.style.width = `${width}px`;
+  //   }
+  // }, []);
 
-  const lineMove = (e) => {
-    line.current.classList.add("on");
+  // const lineMove = (e) => {
+  //   line.current.classList.add("on");
 
-    const elRight = e.target.getBoundingClientRect().right;
-    const elBottom = e.target.getBoundingClientRect().bottom;
-    const parentLeft = e.target.closest(".gnb").getBoundingClientRect().right;
-    const parentBottom = e.target
-      .closest(".gnb")
-      .getBoundingClientRect().bottom;
+  //   const elRight = e.target.getBoundingClientRect().right;
+  //   const elBottom = e.target.getBoundingClientRect().bottom;
+  //   const parentLeft = e.target.closest(".gnb").getBoundingClientRect().right;
+  //   const parentBottom = e.target
+  //     .closest(".gnb")
+  //     .getBoundingClientRect().bottom;
 
-    const moveLeft = parentLeft - elRight;
-    const moveTop = parentBottom - elBottom;
+  //   const moveLeft = parentLeft - elRight;
+  //   const moveTop = parentBottom - elBottom;
 
-    line.current.style.right = `${moveLeft}px`;
-    line.current.style.bottom = `${moveTop}px`;
+  //   line.current.style.right = `${moveLeft}px`;
+  //   line.current.style.bottom = `${moveTop}px`;
 
-    const elWidth = e.target.getBoundingClientRect().width;
+  //   const elWidth = e.target.getBoundingClientRect().width;
 
-    line.current.style.width = `${elWidth}px`;
-  };
+  //   line.current.style.width = `${elWidth}px`;
+  // };
 
-  const handleMouseLeave = () => {
-    line.current.classList.remove("on");
-    line.current.style.width = "0";
-    line.current.style.right = "0";
-    line.current.style.bottom = "0";
-  };
+  // const handleMouseLeave = () => {
+  //   line.current.classList.remove("on");
+  //   line.current.style.width = "0";
+  //   line.current.style.right = "0";
+  //   line.current.style.bottom = "0";
+  // };
 
   return (
     <header>
-      <div className="inner">
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
+
+{
+  /* <div className="inner">
+        <h1 className="logo">Logo</h1>
         <ul ref={gnb} className="gnb" onMouseLeave={handleMouseLeave}>
           <li className="line" ref={line}></li>
           <li onMouseEnter={lineMove}>
@@ -75,9 +100,5 @@ const Header = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
-      </div>
-    </header>
-  );
-};
-
-export default Header;
+      </div> */
+}

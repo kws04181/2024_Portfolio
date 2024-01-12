@@ -1,14 +1,19 @@
 header {
   width: 100%;
   background: #f6f8f6;
+  position: fixed;
+  z-index: 2;
   .inner {
     display: flex;
-    width: 1328px;
+    width: 1280px;
     padding: 40px 0;
     align-items: center;
     border: 1px solid #000;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 0 auto;
+    .logo {
+      margin-left: 20px;
+    }
   }
   .gnb {
     position: relative;
