@@ -18,8 +18,8 @@ const Home = () => {
           <FullpageNavigation />
         </div>
         <FullPageSections>
-          <HomeConts1 />
           <HomeConts2 />
+          <HomeConts1 />
           <HomeConts3 />
           <HomeConts4 />
         </FullPageSections>

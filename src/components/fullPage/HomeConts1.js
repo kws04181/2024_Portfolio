@@ -59,7 +59,7 @@ const HomeConts1 = () => {
           <div className="imgWrapper">
             
           </div>
-          <div className="mouse"></div>
+
         </div>
       </FullpageSection>
     </div>
