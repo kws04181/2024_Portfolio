@@ -39,16 +39,16 @@ const HomeConts3 = () => {
           <div className="swiper-wrapper">
             {/* 슬라이드 아이템들 */}
             <div className="swiper-slide">
-              <SlideItme text="Hello2" />
+              <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
-            <SlideItme text="Hello3" />
+              <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
-              <SlideItme text="Hello4" />
+              <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
-            <SlideItme text="Hello1" />
+              <SlideItme text="PROJECT" />
             </div>
           </div>
           <SlideBtn />
