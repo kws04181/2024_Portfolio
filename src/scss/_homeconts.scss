@@ -88,3 +88,67 @@
     }
   }
 }
+
+/* HomeConts3.css */
+.homeWrapper3 {
+  .swiper-container {
+    position: relative;
+    width: 55%;
+    height: 60%;
+    margin: auto;
+    .swiper-slide {
+      text-align: center;
+      padding: 30px;
+      background-color: #2e2e2e;
+    }
+    .nav-button {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 106%;
+      top: 43%;
+      z-index: 999;
+      left: -2%;
+      button {
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .arrow_back,
+        .arrow_forward {
+          transition: 0.2s ease-in-out;
+          font-size: 58px;
+        }
+        &:hover {
+          .arrow_back {
+            transform: translateX(-5px);
+          }
+          .arrow_forward {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.slideWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  gap: 15px;
+  h1 {
+    color: white;
+  }
+  .imgConts {
+    width: 90%;
+    height: 100%;
+    background: white;
+  }
+}
