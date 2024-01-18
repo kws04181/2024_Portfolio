@@ -8,7 +8,7 @@ const SlideBtn = () => {
       direction: "horizontal",
       centeredSlides: true,
       slidesPerView: "auto",
-      spaceBetween: 30,
+      spaceBetween: 1000,
       loop: true,
       effect: "flip",
       flipEffect: {

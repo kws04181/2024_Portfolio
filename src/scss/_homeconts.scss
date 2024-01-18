@@ -22,10 +22,30 @@
       text-align: center;
     }
   }
-  .imgWrapper {
+  .stacksWrapper {
     width: 50%;
     height: 100%;
-    background: wheat;
+    background: #3b3b4c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-top: 10%;
+    }
+    .frontEndWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15%;
+      .subTit {
+        width: 100%;
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -35,6 +55,7 @@
       div {
         cursor: pointer;
         margin: 2.5px 0;
+        background: white !important;
       }
     }
   }
@@ -46,15 +67,52 @@
   flex-direction: row;
   width: 100%;
   height: 100%;
+  background: linear-gradient(-45deg, #83bacd, #5c5d5f, #373551, #cd884b);
+  background-size: 400% 400%;
+  animation: gradient 14s ease-in-out infinite;
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   .textWrapper2 {
     text-align: center;
     .mainText {
-      letter-spacing: 6px;
-      font-size: 6.5vw;
+      letter-spacing: -2px;
+      font-size: 8vw;
       font-weight: 900;
+      color: white;
+      line-height: 6rem;
     }
     .subText {
-      font-size: 4vw;
+      font-size: 2vw;
+      color: white;
+      letter-spacing: 2.2vh;
+      font-weight: 500;
+      animation: typo_1_1 900ms 800ms;
+      animation-fill-mode: backwards;
+      mix-blend-mode: difference;
+      transition: 300ms ease;
+      @keyframes typo_1_1 {
+        0% {
+          letter-spacing: 5vw;
+          opacity: 0;
+        }
+      }
+    }
+    .scrollDown {
+      bottom: 9%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 0.8rem;
     }
     .mouse {
       bottom: 0;
@@ -62,7 +120,7 @@
       position: absolute;
       width: 30px;
       height: 50px;
-      border: 3px solid black;
+      border: 3px solid white;
       border-radius: 60px;
       transform: translate(-50%, -50%);
       &::before {
@@ -73,7 +131,7 @@
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: black;
+        background-color: white;
         border-radius: 50%;
         opacity: 1;
         animation: wheel 3s infinite;
@@ -93,8 +151,8 @@
 .homeWrapper3 {
   .swiper-container {
     position: relative;
-    width: 55%;
-    height: 70%;
+    width: 65%;
+    height: 80%;
     margin: auto;
     .swiper-slide {
       text-align: center;
@@ -105,10 +163,10 @@
       display: flex;
       justify-content: space-between;
       position: absolute;
-      width: 106%;
+      width: 118%;
       top: 43%;
       z-index: 999;
-      left: -2%;
+      left: -8%;
       button {
         font-size: 1.5rem;
         border: none;

@@ -16,7 +16,7 @@ const HomeConts3 = () => {
       direction: "horizontal",
       centeredSlides: true,
       slidesPerView: "auto",
-      spaceBetween: 30,
+      spaceBetween: 1000,
       loop: true,
       effect: "flip",
       flipEffect: {
@@ -42,13 +42,13 @@ const HomeConts3 = () => {
               <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
-              <SlideItme text="PROJECT" />
+            <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
               <SlideItme text="PROJECT" />
             </div>
             <div className="swiper-slide">
-              <SlideItme text="PROJECT" />
+            <SlideItme text="PROJECT" />
             </div>
           </div>
           <SlideBtn />
