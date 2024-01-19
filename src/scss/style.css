@@ -164,12 +164,13 @@ section {
 }
 .homeWrapper .textWrapper {
   position: relative;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   justify-content: center;
+  background: #cd8846;
 }
 .homeWrapper .textWrapper .typedText {
   position: absolute;
@@ -179,31 +180,6 @@ section {
 .homeWrapper .textWrapper .subText {
   margin: 0;
   text-align: center;
-}
-.homeWrapper .stacksWrapper {
-  width: 50%;
-  height: 100%;
-  background: #3b3b4c;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.homeWrapper .stacksWrapper h1 {
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-top: 10%;
-}
-.homeWrapper .stacksWrapper .frontEndWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15%;
-}
-.homeWrapper .stacksWrapper .frontEndWrapper .subTit {
-  width: 100%;
-  text-align: left;
 }
 
 .navi div div div {
@@ -298,19 +274,70 @@ section {
   }
 }
 
-/* HomeConts3.css */
-.homeWrapper3 .swiper-container {
+.homeWrapper3 {
+  background: #373551;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.homeWrapper3 .title {
+  color: white;
+  font-size: 5vw;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 20%;
+}
+.homeWrapper3 .title span {
+  color: #eba767;
+  position: relative;
+}
+.homeWrapper3 .stacksList {
+  display: flex;
+  flex-direction: column;
+}
+.homeWrapper3 .stacksList div {
+  display: flex;
+}
+.homeWrapper3 .stacksList li {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+.homeWrapper3 .stacksList li img {
+  width: 60px;
+  height: 60px;
+}
+.homeWrapper3 .stacksList .titComtainer {
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 2%;
+}
+.homeWrapper3 .stacksList .titComtainer h1 {
+  color: white;
+}
+.homeWrapper3 .stacksList .titComtainer p {
+  color: white;
+}
+
+/* HomeConts4.css */
+.homeWrapper4 .swiper-container {
   position: relative;
   width: 65%;
   height: 80%;
   margin: auto;
 }
-.homeWrapper3 .swiper-container .swiper-slide {
+.homeWrapper4 .swiper-container .swiper-slide {
   text-align: center;
   padding: 20px;
   background-color: rgb(146, 146, 146);
 }
-.homeWrapper3 .swiper-container .nav-button {
+.homeWrapper4 .swiper-container .nav-button {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -319,7 +346,7 @@ section {
   z-index: 999;
   left: -8%;
 }
-.homeWrapper3 .swiper-container .nav-button button {
+.homeWrapper4 .swiper-container .nav-button button {
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
@@ -329,19 +356,19 @@ section {
   align-items: center;
   justify-content: center;
 }
-.homeWrapper3 .swiper-container .nav-button button .arrow_back,
-.homeWrapper3 .swiper-container .nav-button button .arrow_forward {
+.homeWrapper4 .swiper-container .nav-button button .arrow_back,
+.homeWrapper4 .swiper-container .nav-button button .arrow_forward {
   color: rgb(73, 73, 73);
   transition: 0.3s;
   font-size: 58px;
   filter: drop-shadow(0px 5px 10px 0px rgba(0, 0, 0, 0.5));
 }
-.homeWrapper3 .swiper-container .nav-button button:hover .arrow_back {
+.homeWrapper4 .swiper-container .nav-button button:hover .arrow_back {
   transform: translateX(-5px);
   color: rgb(182, 182, 182);
   filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.25));
 }
-.homeWrapper3 .swiper-container .nav-button button:hover .arrow_forward {
+.homeWrapper4 .swiper-container .nav-button button:hover .arrow_forward {
   transform: translateX(5px);
   color: rgb(182, 182, 182);
   filter: drop-shadow(-2px -5px 2px rgba(0, 0, 0, 0.25));

@@ -56,17 +56,6 @@ const HomeConts1 = () => {
               <p>자연스럽게 프론트엔드 개발자를 꿈꾸게 되었습니다.</p>
             </div>
           </div>
-          <div className="stacksWrapper">
-            <h1>TECH STACKS</h1>
-            <div className="frontEndWrapper">
-              <div className="subTit">FrontEnd</div>
-              <ul className="stacksConts">
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </FullpageSection>
     </div>

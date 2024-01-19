@@ -6,12 +6,13 @@
   height: 100%;
   .textWrapper {
     position: relative;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
     justify-content: center;
+    background: #cd8846;
     .typedText {
       position: absolute;
       top: 350px;
@@ -20,31 +21,6 @@
     .subText {
       margin: 0;
       text-align: center;
-    }
-  }
-  .stacksWrapper {
-    width: 50%;
-    height: 100%;
-    background: #3b3b4c;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      color: white;
-      font-size: 3rem;
-      font-weight: bold;
-      margin-top: 10%;
-    }
-    .frontEndWrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 15%;
-      .subTit {
-        width: 100%;
-        text-align: left;
-      }
     }
   }
 }
@@ -147,8 +123,60 @@
   }
 }
 
-/* HomeConts3.css */
 .homeWrapper3 {
+  background: #373551;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  .title {
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 20%;
+    span {
+      color: #eba767;
+      position: relative;
+    }
+  }
+  .stacksList {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+    }
+
+    li {
+      display: flex;
+      width: 90px;
+      height: 90px;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    .titComtainer {
+      flex-direction: column;
+      gap: 5%;
+      margin-top: 2%;
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+/* HomeConts4.css */
+.homeWrapper4 {
   .swiper-container {
     position: relative;
     width: 65%;
