@@ -11,7 +11,6 @@ import js from "../../img/js.png";
 import react from "../../img/react.png";
 
 const HomeConts3 = () => {
-  // 이미지와 텍스트를 연결하는 데이터 배열
   const stackData = [
     {
       imageUrl: html5,
@@ -64,6 +63,11 @@ const HomeConts3 = () => {
             </div>
           ))}
         </ul>
+        <div className="rightBg">
+          <h1 className="rightTit">
+            MY <span>SKILLS.</span>
+          </h1>
+        </div>
       </div>
     </FullpageSection>
   );

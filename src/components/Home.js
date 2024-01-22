@@ -12,6 +12,7 @@ import HomeConts4 from "./fullPage/HomeConts4";
 import HomeConts5 from "./fullPage/HomeConts5";
 
 const Home = () => {
+
   return (
     <>
       <Fullpage>
@@ -31,3 +32,4 @@ const Home = () => {
 };
 
 export default Home;
+
