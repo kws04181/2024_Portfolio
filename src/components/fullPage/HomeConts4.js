@@ -1,20 +1,20 @@
 // HomeConts3.js
 import React, { useState } from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
-import poter1 from "../../img/poter1.png";
-import poter2 from "../../img/poter2.png";
-import poter3 from "../../img/poter3.png";
-import poter4 from "../../img/poter4.png";
+import visit1 from "../../img/visit1.png";
+import visit2 from "../../img/visit2.png";
+import visit3 from "../../img/visit3.png";
+import visit5 from "../../img/visit5.png";
 import githubIcon from "../../img/github.png";
 import blogIcon from "../../img/blog.png";
 import siteIcon from "../../img/site.png";
 
 const HomeConts3 = () => {
   const imageList = [
-    { image: poter1, buttonText: "깃허브", icon: githubIcon },
-    { image: poter2, buttonText: "블로그", icon: blogIcon },
-    { image: poter3, buttonText: "사이트", icon: siteIcon },
-    { image: poter4 },
+    { image: visit1, buttonText: "깃허브", icon: githubIcon },
+    { image: visit2, buttonText: "블로그", icon: blogIcon },
+    { image: visit3, buttonText: "사이트", icon: siteIcon },
+    { image: visit5 },
   ];
 
   const [selectedImage, setSelectedImage] = useState(imageList[0].image);
@@ -24,9 +24,9 @@ const HomeConts3 = () => {
   };
 
   const linkList = [
-    "https://github.com/kws04181/GreenComputerStudy",
-    "https://oasis-lily-c04.notion.site/Porter-69d0bdf883864b31b5d98c27f6b1834d",
-    "https://elegant-clafoutis-9867b1.netlify.app/",
+    "https://github.com/kws04181/visit-exhibition",
+    "https://oasis-lily-c04.notion.site/VISIT-EXHIBITION-427a388fed7c4b59a1e8ec207e84a796",
+    "https://visit-exhibition-kim.netlify.app/",
   ];
 
   return (
@@ -35,10 +35,10 @@ const HomeConts3 = () => {
         <div className="projectWrapperLeft">
           <div className="projectRightCon">
             <h1 className="projectText">PROJECTS</h1>
-            <p>POTER - 리뉴얼</p>
-            <p>한줄 소개 : 포터 코리아 웹페이지</p>
-            <p>진행 기간 : 2023. 04 ~ 2023. 05</p>
-            <p>Skills: HTML, CSS, JS</p>
+            <p>EXHIBITION - 팀프로젝트(3명)</p>
+            <p>한줄 소개 : 전시회 서칭 웹페이지</p>
+            <p>진행 기간 : 2023. 02 ~ 2023. 03</p>
+            <p>Skills : REACT, REDUX</p>
             <div className="subImg">
               <ul>
                 {imageList.map((item, index) => (
@@ -62,7 +62,9 @@ const HomeConts3 = () => {
                   className="button-link"
                 >
                   <button
-                    className={`button ${index === imageList.length - 1 ? "hidden" : ""}`}
+                    className={`button ${
+                      index === imageList.length - 1 ? "hidden" : ""
+                    }`}
                   >
                     <img src={item.icon} alt={`${item.buttonText} Icon`} />
                     {item.buttonText}
@@ -77,7 +79,7 @@ const HomeConts3 = () => {
           <div
             className="projectBg"
             style={{
-              background: `wheat url("${selectedImage}") no-repeat center/100%`,
+              background: `#222 url("${selectedImage}") no-repeat center/100%`,
             }}
           />
         </div>

@@ -9,7 +9,7 @@ import githubIcon from "../../img/github.png";
 import blogIcon from "../../img/blog.png";
 import siteIcon from "../../img/site.png";
 
-const HomeConts3 = () => {
+const HomeConts3 = ({props}) => {
   const imageList = [
     { image: poter1, buttonText: "깃허브", icon: githubIcon },
     { image: poter2, buttonText: "블로그", icon: blogIcon },
@@ -38,7 +38,7 @@ const HomeConts3 = () => {
             <p>POTER - 리뉴얼</p>
             <p>한줄 소개 : 포터 코리아 웹페이지</p>
             <p>진행 기간 : 2023. 04 ~ 2023. 05</p>
-            <p>Skills: HTML, CSS, JS</p>
+            <p>Skills : HTML, CSS, JS</p>
             <div className="subImg">
               <ul>
                 {imageList.map((item, index) => (
@@ -77,7 +77,7 @@ const HomeConts3 = () => {
           <div
             className="projectBg"
             style={{
-              background: `wheat url("${selectedImage}") no-repeat center/100%`,
+              background: `white url("${selectedImage}") no-repeat center/100%`,
             }}
           />
         </div>

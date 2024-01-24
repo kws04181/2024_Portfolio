@@ -343,7 +343,7 @@
           flex-wrap: wrap;
           li {
             cursor: pointer;
-            width: 200px;
+            width: 180px;
             transition: 0.3s ease;
             &:hover {
               transform: scale(1.1);
@@ -405,8 +405,8 @@
     height: 100%;
     justify-content: center;
     .projectBg {
-      width: 560px;
-      height: 395px;
+      width: 600px;
+      height: 390px;
       animation: shadowAnimation 3s infinite alternate;
       transition: 0.2s ease-in;
       &:hover {

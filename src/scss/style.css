@@ -378,7 +378,7 @@ section {
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .subImg ul li {
   cursor: pointer;
-  width: 200px;
+  width: 180px;
   transition: 0.3s ease;
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .subImg ul li:hover {
@@ -437,8 +437,8 @@ section {
   justify-content: center;
 }
 .homeWrapper3 .projectWrapperRight .projectBg {
-  width: 560px;
-  height: 395px;
+  width: 600px;
+  height: 390px;
   animation: shadowAnimation 3s infinite alternate;
   transition: 0.2s ease-in;
 }
