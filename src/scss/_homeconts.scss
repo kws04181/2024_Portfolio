@@ -1,4 +1,4 @@
-.homeWrapper {
+.homeBg {
   position: relative;
   width: 100%;
   height: 100%;
@@ -89,7 +89,7 @@
       position: relative;
       .typedText {
         position: absolute;
-        top: -100px;
+        top: -80px;
         font-size: 4rem;
         color: white;
         letter-spacing: 1vh;
@@ -128,34 +128,46 @@
     .WrapperRightCon2 {
       display: flex;
       width: 70%;
-      gap: 20%;
-      .title {
+      gap: 25%;
+      .title,
+      .titleCareer {
         color: white;
         font-size: 2rem;
       }
+      .titleCareer {
+        margin-top: 20px;
+      }
+
       .skill,
       .education {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        .beetween {
+          font-size: 1.3rem;
+        }
         ul {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 10px;
           li {
             position: relative;
             display: flex;
-            gap: 20px;
+            gap: 15px;
+            color: white;
+            font-weight: 600;
             img {
-              width: 30px;
+              width: 40px;
             }
             /* 게이지를 감싸는 컨테이너 */
             .gauge-container {
-              width: 175px; /* 게이지의 전체 너비 */
+              border-radius: 10px;
+              width: 200px; /* 게이지의 전체 너비 */
               height: 10px; /* 게이지의 높이 */
               background-color: #ddd; /* 전체 게이지의 배경색 */
               position: relative;
               .gauge {
+                border-radius: 10px;
                 height: 100%;
                 background-color: #eb8467; /* 게이지의 채우기 색상 */
               }
@@ -163,7 +175,11 @@
                 text-align: right;
                 margin-top: 5px;
                 color: white;
+                font-size: 14px;
               }
+            }
+            span {
+              color: #e0e0e0;
             }
           }
         }
@@ -171,13 +187,12 @@
     }
   }
 }
-
-.homeWrapper.fade .textWrapperRight .WrapperRightCon {
-  animation: fadeInRight 1.5s ease-out;
+.homeWrapper.fade .textWrapperRight {
+  animation: fadeInRight 1s ease-in-out;
   @keyframes fadeInRight {
     from {
       opacity: 0;
-      transform: translateX(500px);
+      transform: translateX(50px);
     }
     to {
       opacity: 1;
@@ -199,25 +214,8 @@
 }
 
 .homeWrapper2 {
-  position: relative;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-45deg, #83bacd, #5c5d5f, #373551, #cd884b);
-  background-size: 400% 400%;
-  animation: gradient 14s ease-in-out infinite;
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
   .textWrapper2 {
     text-align: center;
     .mainText {
@@ -286,7 +284,6 @@
 
 .homeWrapper3 {
   position: relative;
-  background: #373551;
   width: 100%;
   height: 100%;
   display: flex;
@@ -299,140 +296,127 @@
     font-size: 5vw;
     font-weight: bold;
     width: 100%;
-    margin-left: 20%;
-    span {
-      color: #eba767;
-      position: relative;
-    }
+    gap: 10%;
+    height: 42%;
   }
-  .stacksList {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    margin-left: 18%;
-    div {
-      display: flex;
-    }
+}
 
-    li {
-      display: flex;
-      width: 90px;
-      height: 90px;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 60px;
-        height: 60px;
-      }
-    }
-    .titComtainer {
-      flex-direction: column;
-      gap: 5%;
-      margin-top: 2%;
-      h1 {
-        color: white;
-      }
-      p {
-        color: white;
-      }
-    }
-  }
-  .rightBg {
-    position: absolute;
-    width: 30%;
-    height: 500px;
-    background: white;
-    left: 65%;
-    display: flex;
+// 반응형 //
+@media screen and (max-width: $md) {
+  .homeWrapper {
     flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    color: black;
-    .rightTit {
-      color: black;
-      font-size: 3vw;
-      font-weight: bold;
+    justify-content: space-around;
+    gap: 15%;
+    .textWrapperLeft {
       width: 100%;
-      text-align: center;
-      margin-top: 10%;
-      span {
-        color: #eba767;
-        position: relative;
+      flex-direction: row;
+      height: 300px;
+      .profileBg {
+        width: 300px;
+        height: 300px;
+        background-size: 340px 440px;
+      }
+      .profileTextCon {
+        margin: 0;
       }
     }
-  }
-}
-
-/* HomeConts4.css */
-.homeWrapper4 {
-  .swiper-container {
-    position: relative;
-    width: 65%;
-    height: 80%;
-    margin: auto;
-    .swiper-slide {
-      text-align: center;
-      padding: 20px;
-      background-color: rgb(146, 146, 146);
-    }
-    .nav-button {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      width: 118%;
-      top: 43%;
-      z-index: 999;
-      left: -8%;
-      button {
-        font-size: 1.5rem;
-        border: none;
-        cursor: pointer;
-        border-radius: 50%;
-        background: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .arrow_back,
-        .arrow_forward {
-          color: rgb(73, 73, 73);
-          transition: 0.3s;
-          font-size: 58px;
-          filter: drop-shadow(0px 5px 10px 0px rgba(0, 0, 0, 0.5));
+    .textWrapperRight {
+      width: 100%;
+      gap: 5%;
+      .WrapperRightCon {
+        gap: 5px;
+        position: absolute;
+        top: 34%;
+        left: 54%;
+        p {
+          font-size: 1rem;
         }
-        &:hover {
-          .arrow_back {
-            transform: translateX(-5px);
-            color: rgb(182, 182, 182);
-            filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.25));
+        .typedText {
+          top: -290px;
+          font-size: 3rem;
+        }
+      }
+      .WrapperRightCon2 {
+        gap: 15%;
+        .title,
+        .titleCareer {
+          font-size: 1.5rem;
+        }
+        .titleCareer {
+          margin-top: 0;
+        }
+        .skill {
+          flex-direction: column;
+        }
+        .education {
+          flex-direction: row;
+          position: relative;
+          gap: 40%;
+          ul {
+            position: absolute;
+            top: 35px;
           }
-          .arrow_forward {
-            transform: translateX(5px);
-            color: rgb(182, 182, 182);
-            filter: drop-shadow(-2px -5px 2px rgba(0, 0, 0, 0.25));
+          .careerRes {
+            left: 100%;
+            width: 100%;
           }
+        }
+        .skill ul li img,
+        .education ul li img {
+          width: 30px;
         }
       }
     }
   }
 }
 
-.slideWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  gap: 15px;
-  h1 {
-    color: black;
-    font-weight: 900;
-    font-size: 2rem;
-  }
-  .imgConts {
-    width: 90%;
-    height: 90%;
-    background: white;
+@media screen and (max-width: $sm) {
+  .homeWrapper {
+    gap: 17%;
+    .textWrapperLeft {
+      .profileBg {
+        width: 250px;
+        height: 250px;
+        background-size: 290px 390px;
+      }
+      .profileTextCon {
+        gap: 15px;
+      }
+    }
+    .textWrapperRight {
+      .WrapperRightCon {
+        left: 31%;
+        bottom: 37%;
+        .typedText {
+          left: 29%;
+        }
+      }
+      .WrapperRightCon2 {
+        gap: 14%;
+        .title,
+        .titleCareer {
+          font-size: 1.3rem;
+          .beetween {
+            font-size: 1rem;
+          }
+        }
+        .skill {
+          ul {
+            li {
+              .gauge-container {
+                width: 140px;
+              }
+            }
+          }
+        }
+        .education {
+          ul {
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 }

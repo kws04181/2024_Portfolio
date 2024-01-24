@@ -3,9 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     display: none;
   }
+}
+
+body.popup-open {
+  overflow: hidden;
 }
 
 ol,
@@ -16,4 +20,3 @@ ul {
 a {
   text-decoration: none;
 }
-

@@ -7,7 +7,7 @@ import Fullpage, {
 
 const HomeConts2 = () => {
   return (
-    <div className="homeWrapper2">
+    <div className="homeWrapper2 homeBg">
       <FullpageSection>
         <div className="textWrapper2">
           <h1 className="mainText">JUNIOR FRONT-END DEV</h1>
