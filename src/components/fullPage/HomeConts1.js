@@ -96,8 +96,7 @@ const HomeConts1 = () => {
 
   return (
     <FullpageSection>
-      {/* <div className={`homeWrapper ${isHovered ? "fade" : ""} homeBg`}> */}
-      <div className={`homeWrapper homeBg`}>
+      <div className={`homeWrapper ${isHovered ? "fade" : ""} homeBg`}>
         <div className="textWrapperLeft">
           <div className="profileBg"></div>
           <div className="profileTextCon">
