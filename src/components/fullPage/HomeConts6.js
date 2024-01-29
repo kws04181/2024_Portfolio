@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { FullpageSection } from "@ap.cx/react-fullpage";
-import poter1 from "../../img/poter1.png";
-import poter2 from "../../img/poter2.png";
-import poter3 from "../../img/poter3.png";
-import poter4 from "../../img/poter4.png";
+import landing1 from "../../img/landing1.png";
+import landing2 from "../../img/landing2.png";
+import landing3 from "../../img/landing3.png";
+import landing5 from "../../img/landing5.png";
 import githubIcon from "../../img/github.png";
 import blogIcon from "../../img/blog.png";
 import siteIcon from "../../img/site.png";
 
 const HomeConts6 = () => {
   const imageList = [
-    { image: poter1, buttonText: "깃허브", icon: githubIcon },
-    { image: poter2, buttonText: "블로그", icon: blogIcon },
-    { image: poter3, buttonText: "사이트", icon: siteIcon },
-    { image: poter4 },
+    { image: landing1, buttonText: "깃허브", icon: githubIcon },
+    { image: landing2, buttonText: "블로그", icon: blogIcon },
+    { image: landing3, buttonText: "사이트", icon: siteIcon },
+    { image: landing5 },
   ];
 
   const [selectedImage, setSelectedImage] = useState(imageList[0].image);
@@ -23,9 +23,9 @@ const HomeConts6 = () => {
   };
 
   const linkList = [
-    "https://github.com/kws04181/GreenComputerStudy",
-    "https://oasis-lily-c04.notion.site/Porter-69d0bdf883864b31b5d98c27f6b1834d",
-    "https://elegant-clafoutis-9867b1.netlify.app/",
+    "https://github.com/kws04181/LandingPage",
+    "https://oasis-lily-c04.notion.site/c3f2b2c6cd1d46e9b3631a7a9a113894",
+    "https://han3948.cafe24.com/",
   ];
 
   return (
@@ -34,9 +34,9 @@ const HomeConts6 = () => {
         <div className="projectWrapperLeft">
           <div className="projectRightCon">
             <h1 className="projectText">PROJECTS</h1>
-            <p>POTER - 리뉴얼</p>
-            <p>한줄 소개 : 포터 코리아 웹페이지</p>
-            <p>진행 기간 : 2023. 04 ~ 2023. 05</p>
+            <p>법무법인랜딩페이지 - 개인프로젝트</p>
+            <p>한줄 소개 : 랜딩페이지 퍼블리싱(프리)</p>
+            <p>진행 기간 : 2023. 07</p>
             <p>Skills: HTML, CSS, JS</p>
             <div className="subImg">
               <ul>

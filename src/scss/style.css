@@ -110,7 +110,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10%;
 }
 .homeBg .textWrapperRight .WrapperRightCon {
   color: white;
@@ -159,6 +158,7 @@ section {
   transform: scale(1.1);
 }
 .homeBg .textWrapperRight .WrapperRightCon2 {
+  margin-top: 2%;
   display: flex;
   width: 70%;
   gap: 25%;
@@ -378,7 +378,7 @@ section {
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .subImg ul li {
   cursor: pointer;
-  width: 180px;
+  width: 12vw;
   transition: 0.3s ease;
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .subImg ul li:hover {
@@ -389,7 +389,6 @@ section {
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon {
   display: flex;
-  justify-content: center;
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon .button-link {
   text-decoration: none;
@@ -416,7 +415,7 @@ section {
   background-color: #2980b9;
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon .button-link .button img {
-  width: 25%;
+  width: 1.5vw;
 }
 .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon .button-link .hidden {
   display: none;
@@ -437,8 +436,8 @@ section {
   justify-content: center;
 }
 .homeWrapper3 .projectWrapperRight .projectBg {
-  width: 600px;
-  height: 390px;
+  width: 45vw;
+  height: 29vw;
   animation: shadowAnimation 3s infinite alternate;
   transition: 0.2s ease-in;
 }
@@ -458,6 +457,9 @@ section {
 }
 
 @media screen and (max-width: 991px) {
+  .homeWrapper.fade .textWrapperRight {
+    animation: none;
+  }
   .homeWrapper {
     flex-direction: column;
     justify-content: space-around;
@@ -523,6 +525,40 @@ section {
   .homeWrapper .textWrapperRight .WrapperRightCon2 .education ul li img {
     width: 30px;
   }
+  .homeWrapper3 {
+    flex-direction: column;
+  }
+  .homeWrapper3 .projectWrapperLeft {
+    width: 100%;
+    height: 45%;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon .subImg ul li {
+    width: 16vw;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon {
+    align-items: center;
+    width: 75%;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon .projectText {
+    font-size: 3rem;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon p {
+    font-size: 1rem;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon {
+    gap: 10px;
+  }
+  .homeWrapper3 .projectWrapperLeft .projectRightCon .btnCon .button-link .button {
+    word-break: keep-all;
+  }
+  .homeWrapper3 .projectWrapperRight {
+    width: 100%;
+    height: 45%;
+  }
+  .homeWrapper3 .projectWrapperRight .projectBg {
+    width: 66vw;
+    height: 49vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .homeWrapper {
@@ -559,5 +595,69 @@ section {
   }
   .homeWrapper .textWrapperRight .WrapperRightCon2 .education ul li {
     font-size: 14px;
+  }
+  .homeWrapper3 .projectWrapperRight .projectBg {
+    height: 43vw;
+  }
+}
+@media screen and (max-width: 575px) {
+  .homeWrapper {
+    gap: 0;
+  }
+  .homeWrapper .textWrapperLeft {
+    height: 0;
+  }
+  .homeWrapper .textWrapperLeft .profileBg {
+    width: 180px;
+    height: 180px;
+    background-size: 240px 340px;
+  }
+  .homeWrapper .textWrapperLeft .profileTextCon {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon {
+    left: 46%;
+    top: 8%;
+    position: absolute;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon p {
+    display: none;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon .typedText {
+    top: 0;
+    left: 0;
+    bottom: 78%;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 40%;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .title,
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .titleCareer {
+    font-size: 1.3rem;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .title .beetween,
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .titleCareer .beetween {
+    font-size: 1rem;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .skill {
+    align-items: center;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .skill ul li .gauge-container {
+    width: 50vw;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .education {
+    margin-left: 86px;
+    gap: 20%;
+    top: 30px;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .education ul li {
+    font-size: 14px;
+  }
+  .homeWrapper .textWrapperRight .WrapperRightCon2 .education .careerRes {
+    left: 209px;
   }
 }/*# sourceMappingURL=style.css.map */

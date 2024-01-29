@@ -34,7 +34,7 @@ const HomeConts3 = () => {
       <div className={`homeWrapper3 homeBg`}>
         <div className="projectWrapperLeft">
           <div className="projectRightCon">
-            <h1 className="projectText">PROJECTS</h1>
+            <h1 className="projectText">PROJECTS.</h1>
             <p>EXHIBITION - 팀프로젝트(3명)</p>
             <p>한줄 소개 : 전시회 서칭 웹페이지</p>
             <p>진행 기간 : 2023. 02 ~ 2023. 03</p>

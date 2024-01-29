@@ -34,8 +34,8 @@ const HomeConts3 = ({props}) => {
       <div className={`homeWrapper3 homeBg`}>
         <div className="projectWrapperLeft">
           <div className="projectRightCon">
-            <h1 className="projectText">PROJECTS</h1>
-            <p>POTER - 리뉴얼</p>
+            <h1 className="projectText">PROJECTS.</h1>
+            <p>POTER - 개인프로젝트</p>
             <p>한줄 소개 : 포터 코리아 웹페이지</p>
             <p>진행 기간 : 2023. 04 ~ 2023. 05</p>
             <p>Skills : HTML, CSS, JS</p>

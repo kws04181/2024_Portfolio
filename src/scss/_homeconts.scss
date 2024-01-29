@@ -78,7 +78,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10%;
     .WrapperRightCon {
       color: white;
       width: 70%;
@@ -126,6 +125,7 @@
       }
     }
     .WrapperRightCon2 {
+      margin-top: 2%;
       display: flex;
       width: 70%;
       gap: 25%;
@@ -343,7 +343,7 @@
           flex-wrap: wrap;
           li {
             cursor: pointer;
-            width: 180px;
+            width: 12vw;
             transition: 0.3s ease;
             &:hover {
               transform: scale(1.1);
@@ -356,7 +356,6 @@
       }
       .btnCon {
         display: flex;
-        justify-content: center;
         .button-link {
           text-decoration: none;
           color: inherit;
@@ -380,7 +379,7 @@
               background-color: #2980b9;
             }
             img {
-              width: 25%;
+              width: 1.5vw;
             }
           }
           .hidden {
@@ -405,8 +404,8 @@
     height: 100%;
     justify-content: center;
     .projectBg {
-      width: 600px;
-      height: 390px;
+      width: 45vw;
+      height: 29vw;
       animation: shadowAnimation 3s infinite alternate;
       transition: 0.2s ease-in;
       &:hover {
@@ -429,6 +428,9 @@
 
 // 반응형 //
 @media screen and (max-width: $md) {
+  .homeWrapper.fade .textWrapperRight {
+    animation: none;
+  }
   .homeWrapper {
     flex-direction: column;
     justify-content: space-around;
@@ -494,6 +496,49 @@
       }
     }
   }
+  .homeWrapper3 {
+    flex-direction: column;
+    .projectWrapperLeft {
+      width: 100%;
+      height: 45%;
+      .projectRightCon {
+        .subImg {
+          ul {
+            li {
+              width: 16vw;
+            }
+          }
+        }
+      }
+      .projectRightCon {
+        align-items: center;
+        width: 75%;
+        .projectText {
+          font-size: 3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+
+        .btnCon {
+          gap: 10px;
+          .button-link {
+            .button {
+              word-break: keep-all;
+            }
+          }
+        }
+      }
+    }
+    .projectWrapperRight {
+      width: 100%;
+      height: 45%;
+      .projectBg {
+        width: 66vw;
+        height: 49vw;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $sm) {
@@ -540,6 +585,82 @@
             li {
               font-size: 14px;
             }
+          }
+        }
+      }
+    }
+  }
+  .homeWrapper3 {
+    .projectWrapperRight {
+      .projectBg {
+        height: 43vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .homeWrapper {
+    gap: 0;
+    .textWrapperLeft {
+      height: 0;
+      .profileBg {
+        width: 180px;
+        height: 180px;
+        background-size: 240px 340px;
+      }
+      .profileTextCon {
+        gap: 10px;
+        font-size: 14px;
+      }
+    }
+    .textWrapperRight {
+      .WrapperRightCon {
+        left: 46%;
+        top: 8%;
+        position: absolute;
+        p {
+          display: none;
+        }
+        .typedText {
+          top: 0;
+          left: 0;
+          bottom: 78%;
+        }
+      }
+      .WrapperRightCon2 {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 40%;
+        .title,
+        .titleCareer {
+          font-size: 1.3rem;
+          .beetween {
+            font-size: 1rem;
+          }
+        }
+        .skill {
+          align-items: center;
+          ul {
+            li {
+              .gauge-container {
+                width: 50vw;
+              }
+            }
+          }
+        }
+        .education {
+          margin-left: 86px;
+          gap: 20%;
+          top: 30px;
+          ul {
+            li {
+              font-size: 14px;
+            }
+          }
+          .careerRes {
+            left: 209px;
           }
         }
       }
